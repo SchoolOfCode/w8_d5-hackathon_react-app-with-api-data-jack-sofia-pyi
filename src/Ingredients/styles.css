@@ -1,0 +1,10 @@
+.pop-ingredients{
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.pop-ingredients img{
+  max-width: 20%;
+  max-height: 30%;
+}

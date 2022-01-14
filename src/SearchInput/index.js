@@ -1,9 +1,9 @@
 import React from "react";
 
-export default function SearchInput({ placeholder }) {
+export default function SearchInput({ placeholder, className }) {
   return (
     <form>
-      <input placeholder={placeholder}></input>
+      <input className={className}placeholder={placeholder}></input>
     </form>
   );
 }
