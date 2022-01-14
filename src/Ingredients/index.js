@@ -8,6 +8,9 @@ export default function Ingredients({ randomCocktail }) {
   const [item, setItems] = useState("");
   const [result, setResult] = useState(null);
   const [recipeId, setRecipeId] = useState(null);
+  const [clickResult, setClickresult] = useState(null);
+
+  console.log(clickResult);
 
   const popularIngredients = [
     "https://www.thecocktaildb.com/images/ingredients/Vodka.png",
@@ -41,6 +44,23 @@ export default function Ingredients({ randomCocktail }) {
 
     console.log(result);
   }, [item]);
+
+  useEffect(() => {
+    async function fetchById() {
+      const res = await fetch(
+        `https:/www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${result[recipeId].idDrink}`
+      );
+      let data = await res.json();
+      setClickresult(data.drinks);
+    }
+    if (!item) {
+      return;
+    } else {
+      fetchById();
+    }
+
+    console.log(result);
+  }, [recipeId]);
 
   return (
     <section className="ingredients-section">
@@ -77,8 +97,8 @@ export default function Ingredients({ randomCocktail }) {
         <div></div>
       )}
 
-      {recipeId ? (
-        <Result cocktailData={result[recipeId]}></Result>
+      {clickResult ? (
+        <Result cocktailData={clickResult[0]}></Result>
       ) : (
         <div></div>
       )}
