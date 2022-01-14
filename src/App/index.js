@@ -8,11 +8,11 @@ function App() {
     <div className="App">
       <Navbar></Navbar>
       <Home></Home>
-      {/* <Routes>
+      <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="ingredients" element={<Ingredients />} />
-        <Route path="search" element={<SearchPage />} />
-      </Routes> */}
+        {/* <Route path="ingredients" element={<Ingredients />} />
+        <Route path="search" element={<SearchPage />} /> */}
+      </Routes>
     </div>
   );
 }

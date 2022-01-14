@@ -2,19 +2,19 @@ import React from "react";
 
 export default function Result({ cocktailData }) {
   const ingredients = {
-    ...cocktailData.strIngredients1,
-    ...cocktailData.strIngredients2,
-    ...cocktailData.strIngredients3,
-    ...cocktailData.strIngredients4,
-    ...cocktailData.strIngredients5,
-    ...cocktailData.strIngredients6,
-    ...cocktailData.strIngredients7,
-    ...cocktailData.strIngredients8,
-    ...cocktailData.strIngredients9,
-    ...cocktailData.strIngredients10,
+    1: cocktailData.strIngredient1,
+    2: cocktailData.strIngredient2,
+    3: cocktailData.strIngredient3,
+    4: cocktailData.strIngredient4,
+    5: cocktailData.strIngredient5,
+    6: cocktailData.strIngredient6,
+    7: cocktailData.strIngredient7,
+    8: cocktailData.strIngredient8,
+    9: cocktailData.strIngredient9,
+    10: cocktailData.strIngredient10,
   };
 
-  const ingredientsArr = ingredients.values();
+  const ingredientsArr = Object.values(ingredients);
 
   return (
     <section>
