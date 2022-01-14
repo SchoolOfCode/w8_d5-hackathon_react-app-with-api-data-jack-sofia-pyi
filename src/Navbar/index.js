@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import SearchInput from "../SearchInput";
+import "./styles.css";
 
 export default function Navbar() {
   return (
