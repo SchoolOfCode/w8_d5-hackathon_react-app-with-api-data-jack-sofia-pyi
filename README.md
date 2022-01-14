@@ -25,3 +25,27 @@ Focus on what features you are going to build next. Break it down into tasks/tic
 ## Show & Tell @ 16:00
 
 You'll be presenting your apps to each other, and each team member should be prepared to present about their app so an end of day wrap-up is a good idea.
+
+
+
+## Components 
+  - App (+ Routes)
+    - Navbar 
+      - links 
+      - title
+      - searchInput
+
+- Home
+  - SearchInput
+  - Result
+
+- Ingredients
+  - SearchInput
+  - PopularCards
+  - ResultsRow
+  - Result
+
+- Search
+  - PopularCards
+  - ResultsRow
+  - Result

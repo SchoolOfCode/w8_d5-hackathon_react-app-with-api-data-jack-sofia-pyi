@@ -1,0 +1,21 @@
+.resultSection {
+  max-width: 100%;
+}
+.resultContent {
+  flex: 1;
+  max-width: 90%;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 auto;
+}
+
+.resultContent img {
+  width: 30%;
+  overflow: hidden;
+}
+.resultText {
+  flex: 1;
+  text-align: left;
+  flex-wrap: wrap;
+  max-width: 50%;
+}
